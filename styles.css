@@ -1,0 +1,35 @@
+:root {
+    --backround-width: 35vw;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+img {
+    height: 100vh;
+    width: var(--backround-width);
+}
+
+.card-body {
+    position: absolute;
+    width: var(--backround-width);
+    padding: 10px 0;
+    top: 120px;
+    background-color: black;
+    opacity: 0.5;
+    text-align: center;
+    color: white;
+    font-size: 4.2rem;
+}
+
+.img-credit {
+    position: absolute;
+    width: var(--backround-width);
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    bottom: 30px;
+}
