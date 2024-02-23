@@ -1,17 +1,28 @@
+/* VARIABLE DEFINITIONS AND IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 :root {
     --backround-width: 35vw;
 }
+
+/* GLOBALS, SOFT 'CSS RESET' OF PADDINGS/MAGINS */
 
 body {
     margin: 0;
     padding: 0;
     display: flex;
+    /* (overflow: hidden) fixes the bottom gap, but I would rather figure out what causes it. Seems to be issue with the background-container div.
+    As of now, I have just commented the div out*/
 }
 
+
 img {
-    height: 100vh;
+    max-height: 100vh;
     width: var(--backround-width);
+    position: relative;
 }
+
 
 .card-body {
     position: absolute;
@@ -19,10 +30,12 @@ img {
     padding: 10px 0;
     top: 120px;
     background-color: black;
-    opacity: 0.5;
+    opacity: 0.8;
     text-align: center;
     color: white;
-    font-size: 4.2rem;
+    font-size: 4rem;
+    mix-blend-mode: color-burn;   /*makes the letters transparent, however the readability of 'TW gets worse due to a shadow in
+    the background getting mixed into colours*/
 }
 
 .img-credit {
@@ -32,4 +45,60 @@ img {
     font-size: 1rem;
     color: white;
     bottom: 30px;
+}
+
+/* TEXTS AND FORM */
+
+.form-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+ .top-part, .formular, .bottom-part {
+    max-width: 900px;
+    text-align: left;
+    font-family: 'Oswald';
+    margin-left: 50px;
+    
+}
+
+.top-part {
+    font-size: 2rem;
+}
+
+input {
+    height: 3rem;
+    border-radius: 0.5rem;
+    margin: 20px 20px 20px 0px;
+    width: 14rem;
+    font-family: 'Oswald';
+    font-size: 1.3rem;
+}
+
+
+.bottom-part {
+    font-size: 1.2rem;
+}
+
+.bottom-part a {
+    text-decoration: none;
+    color: #e48c3b;
+}
+.bottom-part a:hover {
+    color: #a00707;
+}
+
+button {
+    border-radius: 0.5rem;
+    height: 3rem;
+    width: 12rem;
+    background-color: #e48c3b;
+    border: #e48c3b;
+    font-family: 'Oswald';
+    font-size: 1.2rem;
+}
+
+.formular span {
+    font-size: 2rem;
 }
