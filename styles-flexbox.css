@@ -12,10 +12,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    /* (overflow: hidden) fixes the bottom gap, but I would rather figure out what causes it. Seems to be issue with the background-container div.
-    As of now, I have just commented the div out*/
 }
-
 
 img {
     max-height: 100vh;
@@ -97,6 +94,7 @@ button {
     border: #e48c3b;
     font-family: 'Oswald';
     font-size: 1.2rem;
+    border: 2px solid black;
 }
 
 .formular span {
